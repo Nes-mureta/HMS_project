@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="{%static 'css/styles.css'%}"rel="stylesheet" />
+</head>
+<body>
+<div class="vid-container">
+  <video id="Video1" class="bgvid back" autoplay="true" muted="muted" preload="auto" loop>
+      <source src="/vids/Sunset-on-the-seashore-1428970.mp4" type="video/mp4">
+  </video>
+  <div class="inner-container">
+      
+			{% block login_content %}
+			{% endblock %}
+
+			{% block register_content %}
+			{% endblock %}
+
+      
+  </div>
+</div>
+</body>
+</html>

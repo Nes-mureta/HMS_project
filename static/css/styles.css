@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:300);
+body{
+  padding:0;
+  margin:0;
+  font-family: 'Inter';
+}
+.vid-container{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+.bgvid.back {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+.inner {
+  position: absolute;
+}
+.inner-container{
+  width:500px;
+  height:550px;
+  position:absolute;
+  overflow:hidden;
+  border-radius: 7px;
+	top: 40px;
+	right: 10px;
+	
+}
+.box{
+  position:absolute;
+  height: 400px;
+  width:400px;
+  font-family:'Inter';
+  color:#fff;
+  background:rgba(0, 0, 0, 28%);
+  padding:30px 0px;
+  border-radius: 7px;
+}
+.box_reg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	font-family: 'Inter';
+	color: #fff;
+	background: rgba(0, 0, 0, 28%);
+	padding: 10px;
+	border-radius: 7px;
+}
+.box h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:30px;
+}
+.box_reg h2 {
+	text-align:center;
+  margin:10px;
+
+}
+
+.box input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.2);
+  color:#fff;
+  border-radius: 7px;
+  border:0;
+}
+.box_reg input{
+	display:block;
+  width:300px;
+  margin:10px auto;
+	padding: 10px;
+	background:rgba(0,0,0,0.2);
+	color: #fff;
+	border-radius: 7px;
+	border: 0;
+}
+
+.register{
+  color: rgb(3, 0, 0);
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+  outline:rgb(17, 14, 14,solid);
+}
+.box_reg input:focus,.box input:active,.box_reg button:focus,.box button:active{
+  outline:rgb(17, 14, 14,solid);
+}
+.box button{
+  background:#2d2f36;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:200px;
+  margin:10px auto;
+  display:block;
+  cursor:pointer;
+  border-radius: 7px;
+}
+.box_reg button{
+  background:#2d2f36;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:200px;
+  margin:10px auto;
+  display:block;
+  cursor:pointer;
+  border-radius: 7px;
+}
+.box button:active{
+  background:#000000;
+}
+.box_reg button:active{
+  background:#000000;
+}
+.box p{
+  font-size:14px;
+  text-align:center;
+}
+.box_reg p{
+  font-size:14px;
+  text-align:center;
+}
+.box p span{
+  cursor:pointer;
+  color:#666;
+}
+
+@media screen and (max-width: 986px) {
+  .bgvid{
+height: 100px!important;
+  }
+}
+
+@media screen and (min-width: 986px) {
+  .bgvid.back {
+width: 100%;
+  }
+}
