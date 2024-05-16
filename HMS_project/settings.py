@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 LOGIN_URL= '/login/'
 LOGOUT_URL='/logout/'
 
-LOGIN_REDIRECT_URL='/appointments/new/'
+LOGIN_REDIRECT_URL='/homepage/'
 LOGOUT_REDIRECT_URL='/login/'
 
 
@@ -40,6 +40,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'homepage.apps.HomepageConfig',
     'home.apps.HomeConfig',
     'appointments.apps.AppointmentsConfig',
     'django.contrib.admin',

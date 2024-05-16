@@ -15,9 +15,8 @@ class DoctorDetailView(DetailView):
     model=Doctor
     template_name='doctor_detail.html'
     context_object_name='doctor'
-    
-    
-    
+
+# the appointment views
     
 class appointmentsListView(ListView):
     model=Appointment

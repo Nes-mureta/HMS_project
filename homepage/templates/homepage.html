@@ -1,0 +1,54 @@
+{% comment %} {% extends 'base.html' %}
+
+{% block content %}
+  <header>
+    <h1>Welcome to the HMS-project</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'doctors:list' %}">Doctors</a></li>
+        <li><a href="{% url 'patients:list' %}">Patients</a></li>
+        <li><a href="{% url 'appointments:list' %}">Appointments</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Add more content here -->
+{% endblock %} {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="stylesheet" href= {% static 'css/base.css' %}>
+  <script src="https://kit.fontawesome.com/abd9be1116.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src={% static 'images/H_LOGO.png' %} alt="Iraj High Tech Med">
+    </header>
+    <nav class="nav">
+      <ul> <a href="#"><i class="fa-solid fa-calendar-check" style="width: 30px;"></i>  Apointments</a></ul>
+      <ul><a href="#"><i class="fa-solid fa-user-doctor"style="width: 30px;"></i>doctors</a></ul>
+      <ul> <a href="#"><i class="fa-solid fa-signs-post"style="width: 30px;"></i>Guide</a></ul>
+      <ul> <a href="#"><i class="fa-regular fa-address-card"style="width: 30px;"></i>About us</a></ul>
+      <ul> <a href="{% url 'login' %}"><i class="fa-solid fa-arrow-right-from-bracket"style="width: 30px;"></i>Logout</a></ul>
+    </nav>
+    <main class="contents">
+
+    <!-- other contects comes here -->
+    
+    </main>
+    <footer class="footer">
+      <p>feel free to visit our social pages</p>
+      <a href="#"><i class="fa-brands fa-square-facebook"style="width: 30px;"></i></a>
+      <a href="#"><i class="fa-brands fa-square-x-twitter"style="width: 30px;"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"style="width: 30px;"></i></a>
+      <p>copyright &copy; 2024</p>
+    </footer> 
+  </div>
+</body>
+</html>
