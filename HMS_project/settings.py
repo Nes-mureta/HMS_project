@@ -40,9 +40,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'patient_portal.apps.PatientPortalConfig',
     'homepage.apps.HomepageConfig',
     'home.apps.HomeConfig',
-    'appointments.apps.AppointmentsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

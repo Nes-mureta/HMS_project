@@ -17,30 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from homepage import views
-from appointments import views
+from patient_portal import views
 
 urlpatterns = [
     path('', include('home.urls')),
     
     path('',  include('homepage.urls')),
     
+    path('', include('patient_portal.urls')),
+    
     path('admin/', admin.site.urls),
     
   
 ]
   
-""" 
-    path('appointments/<int:pk>/', views.appointmentsDetailView.as_view(), name='appointments_detail'),
-   
-  path('doctors/<int:pk>/', views.DoctorListView.as_view(), name='doctors_list'),
-    
-    path('appointments/<int:pk>/', views.appointmentsListView.as_view(), name='appointments_list'),
-    
-    path('patients/<int:pk>/', views.patientsListView.as_view(), name='patients_list'),
-        
-    
-    path('appointments/new/', views.appointmentCreateView.as_view(), name='book_appoointment'), 
-    
-    path('appointments/<int:pk>/', views.AppointmentsDetailView.as_view(), name='appointment'),
-    
-    path('appointments/<int:pk>/', views.AppointmentsDetailView.as_view(), name='appointment_detail'), """

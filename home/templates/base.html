@@ -7,18 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link href="{%static 'css/styles.css'%}"rel="stylesheet" />
 </head>
-<body>
-  <div class="whole">
-    <div class="inner-container">
-        
-        {% block login_content %}
-        {% endblock %}
+<body >
+  <div class="bg">
+      <img src={% static 'images/H_LOGO.png' %} alt="Iraj High Tech Med"> 
+  </div>
+  <div class="inner-container">
+      
+      {% block login_content %}
+      {% endblock %}
 
-        {% block register_content %}
-        {% endblock %}
-
-        
-    </div>
+      {% block register_content %}
+      {% endblock %}  
   </div>
 </div>
 </body>

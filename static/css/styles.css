@@ -1,8 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:300);
-.whole{
-  background-color: aqua;
-}
 
+
+body{
+  border-radius: 5px;
+  background-image: url('med.jpg');
+
+}
+.bg{
+  position: flex;
+  background: radial-gradient(rgba(0, 255, 255, 0.664),white);
+  height: 400px;
+  width: 500px;
+  margin: 100px;
+  border-radius: 15px;
+}
+.bg img{
+  width: 100%;
+  height: 100%;
+}
 .inner {
   position: absolute;
 }
@@ -21,20 +36,22 @@
   height: 400px;
   width:400px;
   font-family:'Inter';
-  color:#fff;
-  background:rgba(0, 0, 0, 28%);
+  color:#020000;
+  background:rgba(180, 23, 2, 0.74);
   padding:30px 0px;
   border-radius: 7px;
+  font-weight: bold;
 }
 .box_reg {
-	position: absolute;
+	position: flex;
 	height: 100%;
 	width: 100%;
 	font-family: 'Inter';
-	color: #fff;
-	background: rgba(0, 0, 0, 28%);
+	color: #0a39d3;
+  background-color: rgba(224, 7, 7, 0.801);
 	padding: 10px;
 	border-radius: 7px;
+  font-weight: bold;
 }
 .box h1{
   text-align:center;
@@ -52,7 +69,7 @@
   width:300px;
   margin:20px auto;
   padding:15px;
-  background:rgba(0,0,0,0.2);
+  background:rgba(23, 88, 209, 0.432);
   color:#fff;
   border-radius: 7px;
   border:0;
@@ -69,7 +86,7 @@
 }
 
 .register{
-  color: rgb(3, 0, 0);
+  color: rgb(8, 66, 175);
 }
 .box input:focus,.box input:active,.box button:focus,.box button:active{
   outline:rgb(17, 14, 14,solid);
@@ -78,7 +95,7 @@
   outline:rgb(17, 14, 14,solid);
 }
 .box button{
-  background:#2d2f36;
+  background:#05269c;
   border:0;
   color:#fff;
   padding:10px;
@@ -90,7 +107,7 @@
   border-radius: 7px;
 }
 .box_reg button{
-  background:#2d2f36;
+  background:#05269c;
   border:0;
   color:#fff;
   padding:10px;
@@ -118,16 +135,4 @@
 .box p span{
   cursor:pointer;
   color:#666;
-}
-
-@media screen and (max-width: 986px) {
-  .bgvid{
-height: 100px!important;
-  }
-}
-
-@media screen and (min-width: 986px) {
-  .bgvid.back {
-width: 100%;
-  }
 }
